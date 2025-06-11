@@ -2,6 +2,14 @@
 
 This repository contains utilities for working with aviation weather data.
 
+## Installation
+
+Install the Python dependencies with:
+
+```bash
+pip install -r requirements.txt
+```
+
 ## Downloading METAR Data
 
 Use `metar.download_monthly_metars` to download METAR observations for a
