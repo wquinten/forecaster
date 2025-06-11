@@ -20,11 +20,12 @@ def download_monthly_metars(icao: str, year: int, month: int) -> pd.DataFrame:
     -------
     pandas.DataFrame
         DataFrame of METAR observations for the given month in UTC.
+        Includes all available observation fields and the raw METAR string.
     """
     last_day = calendar.monthrange(year, month)[1]
     params = {
         "station": icao,
-        "data": "metars",
+        "data": "all",
         "year1": year,
         "month1": month,
         "day1": 1,
